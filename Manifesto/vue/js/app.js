@@ -144,7 +144,7 @@
 		}
 	};
 
-	exports2.app = new Vue({
+	exports2.app1 = new Vue({
 
 		// the root element that will be compiled
 		el: '.todoapp2',
@@ -268,7 +268,7 @@
 		}
 	};
 
-	exports3.app = new Vue({
+	exports3.app2 = new Vue({
 
 		// the root element that will be compiled
 		el: '.todoapp3',
@@ -393,7 +393,7 @@
 		}
 	};
 
-	exports4.app = new Vue({
+	exports4.app3 = new Vue({
 
 		// the root element that will be compiled
 		el: '.todoapp4',
