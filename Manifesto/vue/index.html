@@ -14,6 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
 
 
 		<style> [v-cloak] { display: none; } </style>
@@ -45,7 +46,7 @@
 		<section class="todoapp" v-cloak>
 			<header class="header">
 				<h1>To Do 1   ...</h1>
-				<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List (press Enter)" v-model="newTodo" @keyup.enter="addTodo">
+				<input type class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List" v-model="newTodo" @keyup.enter="addTodo">
 			</header>
 			<section class="main" v-show="todos.length">
 				<input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
@@ -82,7 +83,7 @@
 				<section class="todoapp2" v-cloak>
 						<header class="header">
 							<h1>To Do 2   ...</h1>
-							<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List (press Enter)" v-model="newTodo" @keyup.enter="addTodo">
+							<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List" v-model="newTodo" @keyup.enter="addTodo">
 						</header>
 						<section class="main" v-show="todos.length">
 							<input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
@@ -120,7 +121,7 @@
 				<section class="todoapp3" v-cloak>
 					<header class="header">
 						<h1>To Do 3   ...</h1>
-						<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List (press Enter)" v-model="newTodo" @keyup.enter="addTodo">
+						<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List" v-model="newTodo" @keyup.enter="addTodo">
 					</header>
 					<section class="main" v-show="todos.length">
 						<input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
@@ -157,7 +158,7 @@
 						<section class="todoapp4" v-cloak>
 								<header class="header">
 									<h1>To Do 4   ...</h1>
-									<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List (press Enter)" v-model="newTodo" @keyup.enter="addTodo">
+									<input class="new-todo" autofocus autocomplete="off" placeholder="+ Add to List" v-model="newTodo" @keyup.enter="addTodo">
 								</header>
 								<section class="main" v-show="todos.length">
 									<input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
