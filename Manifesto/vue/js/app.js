@@ -80,8 +80,11 @@
 			},
 
 			removeTodo: function (todo) {
-				var index = this.todos.indexOf(todo);
-				this.todos.splice(index, 1);
+				var decisao = confirm("Remover esse tópico da lista?");
+				if (decisao){
+					var index = this.todos.indexOf(todo);
+					this.todos.splice(index, 1);
+				}
 			},
 
 			editTodo: function (todo) {
@@ -106,7 +109,10 @@
 			},
 
 			removeCompleted: function () {
+				var decisao = confirm("Deseja mesmo remover o(s) tópico(s) selecionado(s)?");
+				if (decisao){
 				this.todos = filters.active(this.todos);
+				}
 			}
 		},
 
@@ -204,8 +210,11 @@
 			},
 
 			removeTodo: function (todo) {
-				var index = this.todos.indexOf(todo);
-				this.todos.splice(index, 1);
+				var decisao = confirm("Remover esse tópico da lista?");
+				if (decisao){
+					var index = this.todos.indexOf(todo);
+					this.todos.splice(index, 1);
+				}
 			},
 
 			editTodo: function (todo) {
@@ -230,7 +239,10 @@
 			},
 
 			removeCompleted: function () {
+				var decisao = confirm("Deseja mesmo remover o(s) tópico(s) selecionado(s)?");
+				if (decisao){
 				this.todos = filters.active(this.todos);
+				}
 			}
 		},
 
@@ -328,8 +340,11 @@
 			},
 
 			removeTodo: function (todo) {
-				var index = this.todos.indexOf(todo);
-				this.todos.splice(index, 1);
+				var decisao = confirm("Remover esse tópico da lista?");
+				if (decisao){
+					var index = this.todos.indexOf(todo);
+					this.todos.splice(index, 1);
+				}
 			},
 
 			editTodo: function (todo) {
@@ -354,7 +369,10 @@
 			},
 
 			removeCompleted: function () {
+				var decisao = confirm("Deseja mesmo remover o(s) tópico(s) selecionado(s)?");
+				if (decisao){
 				this.todos = filters.active(this.todos);
+				}
 			}
 		},
 
@@ -453,8 +471,11 @@
 			},
 
 			removeTodo: function (todo) {
-				var index = this.todos.indexOf(todo);
-				this.todos.splice(index, 1);
+				var decisao = confirm("Remover esse tópico da lista?");
+				if (decisao){
+					var index = this.todos.indexOf(todo);
+					this.todos.splice(index, 1);
+				}
 			},
 
 			editTodo: function (todo) {
@@ -479,7 +500,10 @@
 			},
 
 			removeCompleted: function () {
+				var decisao = confirm("Deseja mesmo remover o(s) tópico(s) selecionado(s)?");
+				if (decisao){
 				this.todos = filters.active(this.todos);
+				}
 			}
 		},
 
