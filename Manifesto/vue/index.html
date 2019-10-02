@@ -68,7 +68,11 @@
 						</ul>
 					</section>
 					<footer class="footer" v-show="todos.length">
-						<span class="todo-count">
+						<span v-if="todos.length <= 4" class="todo-count">
+							<i class="fa fa-eye"></i>
+							<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+						</span>
+						<span v-if="todos.length > 4" class="todo-count1">
 							<i class="fa fa-eye"></i>
 							<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
 						</span>
@@ -105,10 +109,14 @@
 									</ul>
 								</section>
 								<footer class="footer" v-show="todos.length">
-									<span class="todo-count">
-										<i class="fa fa-eye"></i>
-										<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
-									</span>
+										<span v-if="todos.length <= 4" class="todo-count">
+											<i class="fa fa-eye"></i>
+											<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+										</span>
+										<span v-if="todos.length > 4" class="todo-count1">
+											<i class="fa fa-eye"></i>
+											<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+										</span>
 									<ul class="filters">
 										<li><a href="#/all" :class="{selected: visibility == 'all'}">All</a></li>
 										<li><a href="#/active" :class="{selected: visibility == 'active'}">Active</a></li>
@@ -143,10 +151,14 @@
 						</ul>
 					</section>
 					<footer class="footer" v-show="todos.length">
-						<span class="todo-count">
+							<span v-if="todos.length <= 4" class="todo-count">
 								<i class="fa fa-eye"></i>
-							<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
-						</span>
+								<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+							</span>
+							<span v-if="todos.length > 4" class="todo-count1">
+								<i class="fa fa-eye"></i>
+								<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+							</span>
 						<ul class="filters">
 							<li><a href="#/all" :class="{selected: visibility == 'all'}">All</a></li>
 							<li><a href="#/active" :class="{selected: visibility == 'active'}">Active</a></li>
@@ -180,10 +192,14 @@
 									</ul>
 								</section>
 								<footer class="footer" v-show="todos.length">
-									<span class="todo-count">
-										<i class="fa fa-eye"></i>
-										<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
-									</span>
+										<span v-if="todos.length <= 4" class="todo-count">
+											<i class="fa fa-eye"></i>
+											<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+										</span>
+										<span v-if="todos.length > 4" class="todo-count1">
+											<i class="fa fa-eye"></i>
+											<strong v-text="remaining"></strong> {{pluralize('item', remaining)}} left
+										</span>
 									<ul class="filters">
 										<li><a href="#/all" :class="{selected: visibility == 'all'}">All</a></li>
 										<li><a href="#/active" :class="{selected: visibility == 'active'}">Active</a></li>
